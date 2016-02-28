@@ -35,6 +35,8 @@
 
 #Heavy video files
 *.avi
+*.mpg
+*.mpeg
 
 # OS generated files #
 ######################
