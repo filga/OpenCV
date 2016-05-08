@@ -19,7 +19,9 @@ using namespace cv;
 void detectAndDisplay(Mat frame);
 
 /** Global variables */
-String face_cascade_name = "E:\\Programs\\OpenCV-3.1.0\\opencv\\sources\\data\\lbpcascades\\lbpcascade_frontalface.xml";
+String face_cascade_name = "E:\\Programs\\OpenCV-3.1.0\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_default.xml";
+//Same using Local Binary Pattern (faster)
+//String face_cascade_name = "E:\\Programs\\OpenCV-3.1.0\\opencv\\sources\\data\\lbpcascades\\lbpcascade_frontalface.xml";
 String eyes_cascade_name = "E:\\Programs\\OpenCV-3.1.0\\opencv\\sources\\data\\haarcascades\\haarcascade_eye_tree_eyeglasses.xml";
 CascadeClassifier face_cascade;
 CascadeClassifier eyes_cascade;
