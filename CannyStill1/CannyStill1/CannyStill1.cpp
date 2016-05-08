@@ -68,7 +68,7 @@ int main() {
 			CV_HOUGH_GRADIENT,					// two-pass algorithm for detecting circles, this is the only choice available
 			2,									// size of image / this value = "accumulator resolution", i.e. accum res = size of image / 2
 			imgThresh.rows / 4,				// min distance in pixels between the centers of the detected circles
-			100,								// high threshold of Canny edge detector (called by cvHoughCircles)						
+			100,								// high threshold of Canny edge detector (called by cvHoughCircles)
 			50,									// low threshold of Canny edge detector (set at 1/2 previous value)
 			10,									// min circle radius (any circles with smaller radius will not be returned)
 			400);								// max circle radius (any circles with larger radius will not be returned)
