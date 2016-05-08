@@ -1,5 +1,3 @@
-// RedBallTracker.cpp
-
 #include<opencv2/core/core.hpp>
 #include<opencv2/highgui/highgui.hpp>
 #include<opencv2/imgproc/imgproc.hpp>
@@ -24,6 +22,9 @@ int V_MAX = 256;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 int main() {
 	cv::VideoCapture capWebcam(0);		// declare a VideoCapture object and associate to webcam, 0 => use 1st webcam
+
+	capWebcam.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+	capWebcam.set(CV_CAP_PROP_FRAME_HEIGHT, 1024);
 
 	if (capWebcam.isOpened() == false) {				// check if VideoCapture object was associated to webcam successfully
 		std::cout << "error: capWebcam not accessed successfully\n\n";	// if not, print error message to std out
